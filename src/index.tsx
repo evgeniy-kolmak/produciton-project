@@ -1,15 +1,15 @@
 import ReactDOM from "react-dom/client";
-import "./styles/index.scss";
-import { App } from "./components/App";
+import "./app/styles/index.scss";
+import { App } from "./app/App";
 import {
   createBrowserRouter,
   RouterProvider,
   Route,
   createRoutesFromElements,
 } from "react-router-dom";
-import { MainAsync } from "./pages/Main/Main.async";
-import { AboutAsync } from "./pages/About/About.async";
-import ThemeProvider from "./theme/ThemeProvider";
+import Main from "pages/MainPage/ui/Main";
+import About from "pages/AboutPage/ui/About";
+import { ThemeProvider } from "./app/providers/ThemeProvider";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -20,8 +20,8 @@ const router = createBrowserRouter(
         </ThemeProvider>
       }
     >
-      <Route path="/" element={<MainAsync />} />
-      <Route path="/about" element={<AboutAsync />} />
+      <Route path="/" element={<Main />} />
+      <Route path="/about" element={<About />} />
     </Route>
   )
 );
