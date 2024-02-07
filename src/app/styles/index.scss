@@ -3,6 +3,19 @@
 @import './themes/light.scss';
 @import './themes/dark.scss';
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+}
 
 .app {
   font: var(--font-m);
@@ -11,6 +24,11 @@
   min-height: 100vh;
 }
 
-a {
-  color: inherit;
+.content-page {
+  display: flex;  
+}
+
+.page-wrapper {
+  flex-grow: 1;
+  padding: 20px;
 }

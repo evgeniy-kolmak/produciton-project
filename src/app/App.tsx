@@ -3,15 +3,21 @@ import { Outlet } from "react-router-dom";
 import useTheme from "./providers/ThemeProvider/lib/useTheme";
 import { classNames } from "../shared/lib/helpers/classNames";
 import { Navbar } from "widgets/Navbar";
+import { Sidebar } from "widgets/Sidebar";
 
 export function App() {
   const { theme } = useTheme();
   return (
     <div className={classNames("app", [theme])}>
       <Navbar />
-      <Suspense fallback={"Loading..."}>
-        <Outlet />
-      </Suspense>
+      <div className="content-page">
+        <Sidebar />
+        <Suspense fallback={"Loading..."}>
+          <div className="page-wrapper">
+            <Outlet />
+          </div>
+        </Suspense>
+      </div>
     </div>
   );
 }

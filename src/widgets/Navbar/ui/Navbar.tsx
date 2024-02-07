@@ -16,7 +16,6 @@ export function Navbar({ className }: NavbarProps) {
       <AppLink theme={AppLinkTheme.SECONDARY} to="/about">
         О нас
       </AppLink>
-      <ThemeSwitcher />
     </div>
   );
 }
