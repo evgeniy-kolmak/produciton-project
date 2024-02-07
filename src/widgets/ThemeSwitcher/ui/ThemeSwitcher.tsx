@@ -18,7 +18,7 @@ export function ThemeSwitcher({ className }: ThemeSwitcherProps) {
       className={classNames(themeSwitcher, [className])}
       onClick={toggleTheme}
     >
-      {theme === Theme.LIGHT ? <LightIcon /> : <DarkIcon />}
+      {theme === Theme.DARK ? <LightIcon /> : <DarkIcon />}
     </Button>
   );
 }

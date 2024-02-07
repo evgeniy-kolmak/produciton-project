@@ -1,21 +1,20 @@
 import styles from "./Navbar.module.scss";
 import { classNames } from "shared/lib/helpers/classNames";
-import { AppLink, AppLinkTheme } from "shared/ui/AppLink/AppLink";
-import { ThemeSwitcher } from "widgets/ThemeSwitcher";
+import { AppLink } from "shared/ui/AppLink/AppLink";
 
 interface NavbarProps {
   className?: string;
 }
 
 export function Navbar({ className }: NavbarProps) {
-  const { navbar } = styles;
+  const { navbar, links } = styles;
 
   return (
-    <div className={classNames(navbar)}>
-      <AppLink to="/">Главная</AppLink>
-      <AppLink theme={AppLinkTheme.SECONDARY} to="/about">
-        О нас
-      </AppLink>
+    <div className={classNames(navbar, [className])}>
+      <div className={links}>
+        <AppLink to="/">Главная</AppLink>
+        <AppLink to="/about">О нас</AppLink>
+      </div>
     </div>
   );
 }
