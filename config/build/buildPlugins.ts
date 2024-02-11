@@ -3,11 +3,11 @@ import {
   HotModuleReplacementPlugin,
   ProgressPlugin,
   WebpackPluginInstance,
-} from "webpack";
-import HtmlWebpackPlugin from "html-webpack-plugin";
-import ReactRefreshWebpackPlugin from "@pmmmwh/react-refresh-webpack-plugin";
-import MiniCssExtractPlugin from "mini-css-extract-plugin";
-import { BuildOptions } from "./types/buildOptions";
+} from 'webpack';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+import ReactRefreshWebpackPlugin from '@pmmmwh/react-refresh-webpack-plugin';
+import MiniCssExtractPlugin from 'mini-css-extract-plugin';
+import { BuildOptions } from './types/buildOptions';
 
 export function buildPlugins({
   paths,
@@ -19,8 +19,8 @@ export function buildPlugins({
     }),
     new ProgressPlugin(),
     new MiniCssExtractPlugin({
-      filename: "css/style.[hash].css",
-      chunkFilename: "css/style.[hash].css",
+      filename: 'css/style.[hash].css',
+      chunkFilename: 'css/style.[hash].css',
     }),
     new DefinePlugin({ __IS_DEV__: JSON.stringify(isDev) }),
   ];
