@@ -1,8 +1,8 @@
-@import './normalize.scss';
-@import './fonts.scss';
-@import './variables/globals.scss';
-@import './themes/light.scss';
-@import './themes/dark.scss';
+@import './normalize';
+@import './fonts';
+@import './variables/globals';
+@import './themes/light';
+@import './themes/dark';
 
 * {
   box-sizing: border-box;
