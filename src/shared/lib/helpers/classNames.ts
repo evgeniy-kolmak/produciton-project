@@ -10,7 +10,8 @@ export function classNames(
     ...additional,
     Object.entries(mods)
       .filter(([, value]) => value)
-      .map(([className]) => className),
+      .map(([className]) => className)
+      .join(' '),
   ]
     .join(' ')
     .trim();
