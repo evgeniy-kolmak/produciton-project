@@ -1,0 +1,14 @@
+.errorboundary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--error-bg-color);
+  min-height: 100vh;
+  font: var(--font-xl);
+}
+
+.message {
+  font-size: var(--font-size-m);
+  color: var(--error-text-color);
+}

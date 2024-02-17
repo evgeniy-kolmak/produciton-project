@@ -21,3 +21,26 @@
   border: 1px dashed greenyellow;
   border-radius: 30%;
 }
+
+.error {
+  display: inline-block;
+  padding: 0 25px;
+  margin: 0 15px 15px 0;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  height: 46px;
+  line-height: 46px;
+  color: #444;
+  background-color: #fff;
+  box-shadow:
+    0 4px 6px rgb(65 132 144 / 10%),
+    0 1px 3px rgb(0 0 0 / 8%);
+  font-size: var(--font-size-l);
+}
+
+.error:hover {
+  transition: all 0.2s;
+  box-shadow:
+    0 7px 14px rgb(65 132 144 / 10%),
+    0 3px 6px rgb(0 0 0 / 8%);
+}

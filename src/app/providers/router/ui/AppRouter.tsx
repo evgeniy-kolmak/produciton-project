@@ -7,6 +7,8 @@ import {
 } from 'react-router-dom';
 import { App } from 'app/App';
 import { ThemeProvider } from 'app/providers/ThemeProvider';
+import { ErrorBoundary } from 'widgets/ErrorBoundary';
+
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route
@@ -15,6 +17,7 @@ const router = createBrowserRouter(
           <App />
         </ThemeProvider>
       }
+      errorElement={<ErrorBoundary />}
     >
       {Object.values(routeConfig).map(({ path, element }) => (
         <Route key={path} path={path} element={element} />
