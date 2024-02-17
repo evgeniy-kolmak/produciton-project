@@ -8,5 +8,6 @@ export default {
     Язык: 'Eng',
     'Что-то пошло не так': 'Oops! Something went wrong:',
     'Попробуйте снова': 'Try again',
+    'Непредвиденная ошибка': 'Unexpected error',
   },
 };
