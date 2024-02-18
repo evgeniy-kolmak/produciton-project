@@ -1,6 +1,7 @@
 import styles from './Sidebar.module.scss';
-import { classNames } from 'shared/lib/helpers/classNames';
+import { classNames } from 'shared/lib/helpers/classNames/classNames';
 import { useState } from 'react';
+import { Button } from 'shared/ui/Button/Button';
 import { ThemeSwitcher } from 'widgets/ThemeSwitcher';
 import { LangSwitcher } from 'widgets/LangSwitcher';
 
@@ -16,11 +17,14 @@ export function Sidebar({ className }: SidebarProps) {
 
   return (
     <div
+      data-testid="sidebar"
       className={classNames(sidebar, [className], {
         [collapsed]: isCollapsed,
       })}
     >
-      <button onClick={onToggle}>toggle</button>
+      <Button data-testid="sidebar-toggle" onClick={onToggle}>
+        toggle
+      </Button>
       <div className={switchers}>
         <ThemeSwitcher />
         <LangSwitcher />
