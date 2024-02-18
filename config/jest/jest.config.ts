@@ -1,3 +1,5 @@
+import path from 'path';
+
 /** @type {import('ts-jest').JestConfigWithTsJest} */
 module.exports = {
   preset: 'ts-jest',
@@ -20,5 +22,6 @@ module.exports = {
   clearMocks: true,
   moduleNameMapper: {
     '\\.s?css$': 'identity-obj-proxy',
+    '\\.svg': path.resolve(__dirname, 'JestEmptyComponent.tsx'),
   },
 };
