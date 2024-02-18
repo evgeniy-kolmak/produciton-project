@@ -38,4 +38,5 @@ module.exports = {
     'i18next/no-literal-string': 2,
     'prettier/prettier': 'warn',
   },
+  ignorePatterns: ['src/**/*.test.ts', 'src/**/*.test.tsx'],
 };
