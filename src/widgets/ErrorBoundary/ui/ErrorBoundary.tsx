@@ -1,5 +1,5 @@
 import styles from './ErrorBoundary.module.scss';
-import { classNames } from 'shared/lib/helpers/classNames';
+import { classNames } from 'shared/lib/helpers/classNames/classNames';
 import { useRouteError } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Button, ThemeButton } from 'shared/ui/Button/Button';

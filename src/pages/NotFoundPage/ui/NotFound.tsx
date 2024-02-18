@@ -1,5 +1,5 @@
 import styles from './NotFound.module.scss';
-import { classNames } from 'shared/lib/helpers/classNames';
+import { classNames } from 'shared/lib/helpers/classNames/classNames';
 import { useTranslation } from 'react-i18next';
 
 interface NotFoundProps {

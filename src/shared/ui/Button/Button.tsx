@@ -1,6 +1,6 @@
 import { ButtonHTMLAttributes } from 'react';
 import styles from './Button.module.scss';
-import { classNames } from 'shared/lib/helpers/classNames';
+import { classNames } from 'shared/lib/helpers/classNames/classNames';
 
 export enum ThemeButton {
   PRIMARY = 'primary',

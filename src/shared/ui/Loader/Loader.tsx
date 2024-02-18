@@ -1,5 +1,5 @@
 import styles from './Loader.module.scss';
-import { classNames } from 'shared/lib/helpers/classNames';
+import { classNames } from 'shared/lib/helpers/classNames/classNames';
 
 interface LoaderProps {
   className?: string;

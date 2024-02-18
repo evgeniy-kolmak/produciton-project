@@ -1,5 +1,5 @@
 import styles from './ThemeSwitcher.module.scss';
-import { classNames } from 'shared/lib/helpers/classNames';
+import { classNames } from 'shared/lib/helpers/classNames/classNames';
 import { useTheme, Theme } from 'app/providers/ThemeProvider';
 import { Button, ThemeButton } from 'shared/ui/Button/Button';
 import DarkIcon from 'shared/assets/icons/theme-dark.svg';
