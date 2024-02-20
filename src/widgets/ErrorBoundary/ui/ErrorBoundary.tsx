@@ -2,7 +2,7 @@ import styles from './ErrorBoundary.module.scss';
 import { classNames } from 'shared/lib/helpers/classNames/classNames';
 import { useRouteError } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { Button, ThemeButton } from 'shared/ui/Button/Button';
+import { Button } from 'shared/ui/Button/Button';
 
 export function ErrorBoundary() {
   const { errorboundary, message, button } = styles;
@@ -17,11 +17,7 @@ export function ErrorBoundary() {
       <pre className={classNames(message)}>
         {error.message ? error.message : t('Непредвиденная ошибка')}
       </pre>
-      <Button
-        theme={ThemeButton.ERROR}
-        className={classNames(button)}
-        onClick={onReload}
-      >
+      <Button className={classNames(button)} onClick={onReload}>
         {t('Попробуйте снова')}
       </Button>
     </div>

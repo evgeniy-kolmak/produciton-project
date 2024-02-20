@@ -4,9 +4,8 @@ import { classNames } from 'shared/lib/helpers/classNames/classNames';
 
 export enum ThemeButton {
   PRIMARY = 'primary',
-  SECONDARY = 'secondary',
+  OUTLINE = 'outline',
   DEFAULT = 'default',
-  ERROR = 'error',
 }
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {

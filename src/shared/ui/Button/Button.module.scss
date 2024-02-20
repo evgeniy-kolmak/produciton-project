@@ -3,44 +3,37 @@
   outline: none;
   cursor: pointer;
   color: inherit;
+  color: var(--primary-color);
+  font: var(--font-m);
 }
 
 .default {
-  background: transparent;
+  background: none;
 }
 
 .primary {
-  margin: 0 10px;
-  padding: 5px 15px;
-}
-
-.secondary {
-  background: lightgreen;
-  margin: 0 15px;
-  padding: 5px 10px;
-  border: 1px dashed greenyellow;
-  border-radius: 30%;
-}
-
-.error {
   display: inline-block;
   padding: 0 25px;
   margin: 0 15px 15px 0;
   border: 1px solid #fff;
   border-radius: 50px;
   height: 46px;
-  line-height: 46px;
-  color: #444;
-  background-color: #fff;
+  background: #fff;
   box-shadow:
     0 4px 6px rgb(65 132 144 / 10%),
     0 1px 3px rgb(0 0 0 / 8%);
-  font-size: var(--font-size-l);
 }
 
-.error:hover {
-  transition: all 0.2s;
+.outline {
+  display: inline-block;
+  padding: 0 25px;
+  margin: 0 15px 15px 0;
+  border-radius: 50px;
+  height: 46px;
+  background: none;
+  color: var(--primary-color);
+  border: 1px solid #ccc;
   box-shadow:
-    0 7px 14px rgb(65 132 144 / 10%),
-    0 3px 6px rgb(0 0 0 / 8%);
+    0 4px 6px rgb(65 132 144 / 10%),
+    0 1px 3px rgb(0 0 0 / 8%);
 }
