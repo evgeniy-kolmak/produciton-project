@@ -1,39 +1,29 @@
 .button {
   border: none;
   outline: none;
+  display: inline-block;
   cursor: pointer;
-  color: inherit;
   color: var(--primary-color);
   font: var(--font-m);
+  padding: 0 25px;
+  height: 46px;
 }
 
 .default {
   background: none;
+  color: inherit;
 }
 
 .primary {
-  display: inline-block;
-  padding: 0 25px;
-  margin: 0 15px 15px 0;
-  border: 1px solid #fff;
+  border: 1px solid var(--primary-bg-button-color);
   border-radius: 50px;
-  height: 46px;
-  background: #fff;
-  box-shadow:
-    0 4px 6px rgb(65 132 144 / 10%),
-    0 1px 3px rgb(0 0 0 / 8%);
+  color: inherit;
+  background: var(--primary-bg-button-color);
 }
 
 .outline {
-  display: inline-block;
-  padding: 0 25px;
-  margin: 0 15px 15px 0;
   border-radius: 50px;
-  height: 46px;
+  color: inherit;
   background: none;
-  color: var(--primary-color);
-  border: 1px solid #ccc;
-  box-shadow:
-    0 4px 6px rgb(65 132 144 / 10%),
-    0 1px 3px rgb(0 0 0 / 8%);
+  border: 1px solid var(--inverted-bg-color);
 }
