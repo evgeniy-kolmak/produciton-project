@@ -61,6 +61,7 @@
     "sass": "^1.69.7",
     "sass-loader": "^13.3.3",
     "storybook": "^7.6.16",
+    "storybook-addon-react-router-v6": "^2.0.10",
     "style-loader": "^3.3.4",
     "stylelint": "^16.2.1",
     "stylelint-config-standard-scss": "^13.0.0",

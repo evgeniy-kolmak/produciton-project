@@ -1,8 +1,8 @@
 import { Preview } from '@storybook/react';
 import 'app/styles/index.scss';
 import { ThemeDecorator } from '../../src/shared/config/storybook/themeDecorator/themeDecorator';
-import { RouterDecorator } from '../../src/shared/config/storybook/routerDecorator/routerDecorator';
 import { Theme } from '../../src/app/providers/ThemeProvider';
+import { withRouter } from 'storybook-addon-react-router-v6';
 const preview: Preview = {
   parameters: {
     actions: { argTypesRegex: '^on[A-Z].*' },
@@ -13,7 +13,7 @@ const preview: Preview = {
       },
     },
   },
-  decorators: [ThemeDecorator(Theme.LIGHT), RouterDecorator()],
+  decorators: [ThemeDecorator(Theme.LIGHT), withRouter],
 };
 
 export default preview;

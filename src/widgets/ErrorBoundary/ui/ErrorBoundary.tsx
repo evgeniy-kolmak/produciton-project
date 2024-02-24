@@ -15,7 +15,7 @@ export function ErrorBoundary() {
     <div className={classNames(errorboundary)}>
       <p>{t('Что-то пошло не так')}</p>
       <pre className={classNames(message)}>
-        {error.message ? error.message : t('Непредвиденная ошибка')}
+        {error?.message ? error.message : t('Непредвиденная ошибка')}
       </pre>
       <Button className={classNames(button)} onClick={onReload}>
         {t('Попробуйте снова')}
