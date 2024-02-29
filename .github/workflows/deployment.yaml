@@ -2,8 +2,6 @@ name: Deployment Application
 on:
   push:
     branches: [main]
-env:
-  TOKEN: ${{secrets.TOKEN}}
 jobs:
   lint:
     runs-on: ubuntu-latest
@@ -58,5 +56,5 @@ jobs:
       - name: Deployment App
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{secrets.TOKEN}}
           publish_dir: ./build
