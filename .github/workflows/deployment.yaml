@@ -22,10 +22,11 @@ jobs:
       - name: Starting Stylelint
         run: npm run stylelint
   test:
-    runs-on: ubuntu-latest
     strategy:
       matrix:
         node-version: [20.x]
+        os: [macos-latest, ubuntu-latest]
+    runs-on: ${{matrix.os}}
     steps:
       - name: Get repository code
         uses: actions/checkout@v3
