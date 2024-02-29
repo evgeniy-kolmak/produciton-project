@@ -26,7 +26,8 @@ jobs:
       - name: Starting Screenshot test
         run: |
           npm run storybook:build
-          npx loki --requireReference --reactUri file:./storybook-static
+          npm run test:ui:ci
+
   build:
     runs-on: ubuntu-latest
     needs: [lint, test]
