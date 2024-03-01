@@ -15,14 +15,13 @@
     "test:unit": "jest --config ./config/jest/jest.config.ts",
     "test:ui": "npx loki test",
     "test:ui:ok": "npx loki approve",
-    "test:ui:ci": "loki update --requireReference --reactUri file:./storybook-static",
     "storybook": "storybook dev -p 6006 -c ./config/storybook",
     "storybook:build": "storybook build -c ./config/storybook"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
+    "devDependencies": {
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.11",
     "@storybook/addon-essentials": "^7.6.16",
     "@storybook/addon-interactions": "^7.6.16",
