@@ -15,7 +15,7 @@ export function ThemeSwitcher({ className }: ThemeSwitcherProps) {
 
   return (
     <Button
-      theme={ThemeButton.DEFAULT}
+      theme={ThemeButton.ICON}
       className={classNames(themeswitcher, [className])}
       onClick={toggleTheme}
     >

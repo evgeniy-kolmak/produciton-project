@@ -23,7 +23,7 @@ export function LangSwitcher({ className }: LangSwitcherProps) {
 
   return (
     <Button
-      theme={ThemeButton.DEFAULT}
+      theme={ThemeButton.ICON}
       onClick={toggleLang}
       className={classNames(langswitcher, [className])}
     >
