@@ -28,3 +28,10 @@ export const Default: Story = {
     children: 'Button',
   },
 };
+
+export const Icon: Story = {
+  args: {
+    theme: ThemeButton.DEFAULT,
+    children: 'Icon',
+  },
+};

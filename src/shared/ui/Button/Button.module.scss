@@ -27,3 +27,17 @@
   background: none;
   border: 1px solid var(--inverted-bg-color);
 }
+
+.icon {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border-radius: 50%;
+  transition: background 0.2s;
+  padding: 0.3rem;
+
+  &:hover {
+    transition: background 0.2s;
+    background: var(--hover-button);
+  }
+}

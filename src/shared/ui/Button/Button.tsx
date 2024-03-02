@@ -3,9 +3,10 @@ import styles from './Button.module.scss';
 import { classNames } from 'shared/lib/helpers/classNames/classNames';
 
 export enum ThemeButton {
+  DEFAULT = 'default',
   PRIMARY = 'primary',
   OUTLINE = 'outline',
-  DEFAULT = 'default',
+  ICON = 'icon',
 }
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
