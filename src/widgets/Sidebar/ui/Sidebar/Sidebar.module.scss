@@ -3,10 +3,16 @@
   width: var(--sidebar-width);
   background: var(--inverted-bg-color);
   position: relative;
-  transition: 0.3s all;
+  transition: width 0.3s;
   border-width: 0 1px 0 0;
   border-style: solid;
   border-color: var(--secondary-color);
+
+  & .button {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+  }
 }
 
 .collapsed {
@@ -19,4 +25,59 @@
   width: 100%;
   display: flex;
   justify-content: center;
+
+  .collapsed & {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.items {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  font: var(--font-l);
+  padding-top: 6rem;
+  padding-left: 2.5rem;
+  width: 100%;
+
+  & svg {
+    margin-right: 10px;
+    fill: var(--primary-color);
+  }
+
+  .collapsed & {
+    align-items: center;
+    padding-left: 0;
+
+    & svg {
+      margin-right: 0;
+    }
+  }
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  max-height: 30px;
+
+  & span {
+    transition: opacity 0.15s;
+    width: max-content;
+    opacity: 1;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  .collapsed & span {
+    width: 0;
+    opacity: 0;
+  }
+}
+
+.icon {
+  stroke: var(--primary-color);
 }
