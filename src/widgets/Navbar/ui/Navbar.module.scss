@@ -10,11 +10,3 @@
   border-color: var(--secondary-color);
   transition: 0.3s all;
 }
-
-.links {
-  margin-left: auto;
-
-  & a:not(:last-child) {
-    margin-right: 15px;
-  }
-}
