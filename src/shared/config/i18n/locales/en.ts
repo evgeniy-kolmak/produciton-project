@@ -10,5 +10,6 @@ export default {
     'Попробуйте снова': 'Try again',
     'Непредвиденная ошибка': 'Unexpected error',
     Переключить: 'Switch',
+    Войти: 'Sign in',
   },
 };
