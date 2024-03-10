@@ -11,5 +11,11 @@ export default {
     'Непредвиденная ошибка': 'Unexpected error',
     Переключить: 'Switch',
     Войти: 'Sign in',
+    Логин: 'Login',
+    Пароль: 'Password',
+    'Обязательное поле': 'This field is required',
+    'Вход в личный кабинет': 'Login to your personal account',
+    'Забыли пароль': 'Forgot password?',
+    Регистрация: 'Sign up',
   },
 };

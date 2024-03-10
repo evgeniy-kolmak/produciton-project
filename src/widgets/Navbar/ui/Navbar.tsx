@@ -4,6 +4,7 @@ import { classNames } from 'shared/lib/helpers/classNames/classNames';
 import { useTranslation } from 'react-i18next';
 import { Modal } from 'shared/ui/Modal/Modal';
 import { useCallback, useState } from 'react';
+import { LoginForm } from 'features/AuthByUsername/LoginForm/LoginForm';
 
 interface NavbarProps {
   className?: string;
@@ -21,12 +22,7 @@ export function Navbar({ className }: NavbarProps) {
   return (
     <div className={classNames(navbar, [className])}>
       <Modal isOpen={isOpenModal} onClose={handlerModal}>
-        <div>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore
-          sapiente eveniet quo illo, veniam, non corporis recusandae a quidem
-          reprehenderit voluptatem perferendis enim ex necessitatibus voluptate
-          quaerat quasi. Incidunt, dolorem!
-        </div>
+        <LoginForm />
       </Modal>
       <Button onClick={handlerModal} theme={ThemeButton.DEFAULT}>
         {t('Войти')}

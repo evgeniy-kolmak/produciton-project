@@ -1,0 +1,44 @@
+.loginform {
+  display: flex;
+  flex-direction: column;
+  min-width: 400px;
+  min-height: 360px;
+
+  & hr {
+    margin: 0.3rem 0 0.9em;
+  }
+}
+
+.fields {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-height: 230px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0.6rem 0;
+
+  & a {
+    text-decoration: underline;
+  }
+}
+
+.button {
+  margin-top: 0.5rem;
+}
+
+.title {
+  font: var(--font-xl);
+  font-weight: 400;
+}
+
+.error {
+  display: inline-block;
+  font: var(--font-s);
+  color: #d32f2f;
+  margin: 6px 0;
+}
